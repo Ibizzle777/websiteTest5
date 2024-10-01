@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bedwars Tourneys - Tournament Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <script type='text/javascript' src='config.js'></script>
+    <script type="module" src="createform.js"></script>
+</head>
+<header>
+    <h2 class="title"><a href="index.html">Bedwars Tourneys</a></h2>
+    <h2 class="account"><a href="account.html">Account</a></h2>
+</header>
+<nav>
+    <ul>
+        <li><a href="tourneys.html">Tournaments</a></li>
+        <li><a href="#">test</a></li>
+    </ul>
+</nav>
+
+<body>
+    <div class="container" id="create-form">
+        <h2 class="create-form-title">Create a Tournament</h2>
+        <p class="create-form-subtitle">Here you can host a Bedwars Tournament!</p>
+        <form>
+            <div class="input-group">
+                <input type="text" id="comp-name" placeholder="Type name here..." required>
+                <label for="comp-name">Competition Name</label>
+            </div>
+            <div class="input-group">
+                <input type="number" id="prize" placeholder="Enter amount here...">
+                <label for="prize">Prize (Leave blank if no prize)</label>
+            </div>
+            <div class="input-group">
+                <input type="date" id="registrations-close" required>
+                <label for="date">Registrations Close</label>
+            </div>
+            <div class="input-group">
+                <input type="date" id="comp-date" required>
+                <label for="input-group">Tournament Start Date</label>
+            </div>
+            <div class="input-group">
+                <input type="time" id="comp-time" required>
+                <label for="comp-time">Tournament Start Time</label>
+            </div>
+            <div class="input-group">
+                <select name="format" id="tourney-format" required>
+                    <option value="blank">Select...</option>
+                    <option value="1x2">1v1 (2 teams of 1)</option>
+                    <option value="1x4">1v1v1v1 (4 teams of 1)</option>
+                    <option value="1x8">1v1v1v1v1v1v1v1 (8 teams of 1)</option>
+                    <option value="2x2">2v2 (2 teams of 2)</option>
+                    <option value="2x8">2v2v2v2v2v2v2v2 (8 teams of 2)</option>
+                    <option value="3x4">3v3v3v3 (4 teams of 3)</option>
+                    <option value="4x2">4v4 (2 teams of 4)</option>
+                    <option value="4x4">4v4v4v4 (4 teams of 4)</option>
+                </select>
+                <label for="tourney-format">Tournament Format</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="discord-link" placeholder="Insert discord link here..." required>
+                <label for="discord-link">Discord Server Link (To further organise tournaments)</label>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" id="TandCs" required>
+                <label for="TandCs">I accept the <a href="TandCs.html">terms & conditions</a> of hosting a tournament.</label>
+            </div>
+        </form>
+        <button id="createButton">Create Tournament</button>
+
+        <div id="tourneyMessage" style="display: none;"></div>
+    </div>
+</body>
+
+</html>

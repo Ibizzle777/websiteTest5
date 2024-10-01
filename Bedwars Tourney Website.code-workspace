@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Firebase Test"
+		},
+		{
+			"path": "../CopyandPastFirebase"
+		},
+		{
+			"path": "C:/Users/isaac/Downloads/og-finder-master/og-finder-master"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Bedwars Tourney Website"
+	}
+}
